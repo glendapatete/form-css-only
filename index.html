@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    
+  </head>
+  <body>
+    <div class="container">
+      <input type="radio" id="tab1" class="radio" name="css-tabs" checked />
+      <input type="radio" id="tab2" class="radio" name="css-tabs" />
+      <input type="radio" id="tab3" class="radio" name="css-tabs" />
+
+      <ul class="tabs">
+        <li class="tab">
+          <label for="tab1" id="tabsLabel1"
+            ><i class="far fa-power-off"></i
+          ></label>
+        </li>
+        <li class="tab">
+          <label for="tab2" id="tabsLabel2"
+            ><i class="far fa-user-plus"></i
+          ></label>
+        </li>
+        <li class="tab">
+          <label for="tab3" id="tabsLabel3"
+            ><i class="far fa-envelope"></i
+          ></label>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="content1">
+        <form action="">
+          <div class="input-group">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-user"></i></span>
+            </div>
+            <input type="email" placeholder="Usuario" required/>
+          </div>
+          <div class="input-group">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-key"></i></span>
+            </div>
+            <input type="password" placeholder="Contraseña" required/>
+          </div>
+          <button type="submit">Ingresar</button>
+        </form>
+        <p>¿No tienes cuenta? <a class="reg" href="#">¡Regístrate!</a></p>
+      </div>
+
+      <div class="tab-content" id="content2">
+        <form action="/submit" id="formRegister">
+          <div>
+            <label>Nombre:</label>
+            <input type="text" required/>
+          </div>
+          <div>
+              <label>Apellido:</label>
+              <input type="text" required/>
+            </div>
+          <div>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" required/>
+          </div>
+          <div>
+            <label>Email:</label>
+            <input type="email" required/>
+          </div>
+          <div>
+            <label for="">Sexo:</label>
+            <input type="radio" name="gender"  id="gender" value="male">Femino</input>
+            <input type="radio" name="gender"  id="gender" value="boy">Masculino</input>
+          </div>
+
+          <div>
+            <label>Teléfono:</label>
+            <input type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="9" required/>
+          </div>
+          <div>
+            <label>Codigo Postal:</label>
+            <input type="number" />
+          </div>
+          <div>
+              <label>Contraseña</label>
+              <input type="password" required/>
+            </div>
+          <div>
+            <label>Repetir contraseña</label>
+            <input type="password" required/>
+          </div>
+          
+          <div>
+            <input type="checkbox"  name="terms" value="terms" required>
+            <label> Acepto los terminos y condicione</label><br>
+          </div>
+          <div>
+              <input type="checkbox"  name="want" value="want">
+              <label> Quiero recibir correos de noticias</label><br>
+            </div>
+            <button type="submit">Registrarme</button>
+        </form>
+      </div>
+
+      <div class="tab-content" id="content3">
+        <form action="" id="formContac">
+            <div>
+              <label>Nombre:</label>
+              <input type="text" required/>
+            </div>
+            <div>
+                <label>Apellido:</label>
+                <input type="text" required/>
+              </div>
+            
+            <div>
+              <label>Email:</label>
+              <input type="email" required/>
+            </div>
+            <div>
+              <label>Mensaje:</label>
+              <textarea cols="30" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
